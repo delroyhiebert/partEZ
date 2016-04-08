@@ -26,9 +26,19 @@ class HomeController extends ApiHomeController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($local_events_only = false)
+    public function index($local_events_only = false, $local_city = null)
     {
-        $response =  ApiHomeController::index();
+        if($local_events_only) 
+        {
+            $input = Request::all();
+            $response =  ApiHomeController::index($local_events_only, $input['city']);
+        }
+        else
+        {
+            $response =  ApiHomeController::index($local_events_only);
+        }
+        
+        
         return view('home')->with('data', $response->getData());
     }
 

@@ -27,7 +27,7 @@ class ApiHomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($local_events_only = false)
+    public function index($local_events_only = false, $local_city = null)
     {
         $user = Auth::user();
         $user_events = $this->getUsersEvents();
@@ -37,8 +37,12 @@ class ApiHomeController extends Controller
         $public_events = $this->getPublicEvents();
         $public_events = $public_events->toArray();
 
-        $this->updateCity();
+        if($local_events_only) {
+            $this->updateCity($local_city);
+        }
+
         $city = $user->city;
+
         return response()->json(compact('user_events', 'invited_events', 'public_events', 'local_events_only', 'city'));
     }
 
@@ -52,12 +56,10 @@ class ApiHomeController extends Controller
 
     }
 
-    public function updateCity()
+    public function updateCity($local_city)
     {
-        $input = [];
         $user = Auth::user();
-        $city =  array_key_exists ('city' , $input) ? $input['city'] : $user->city;
-        $user->city = $city;
+        $user->city = $local_city;
         $user->save();
     }
 

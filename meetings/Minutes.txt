@@ -202,3 +202,34 @@ Attendance:
 - Greg	- Delroy - Jen
 Group coding session to finalize iteration and finish Android development. Ensured
 tests were running successfully. Delroy joined via Skype.
+---------------------------------------------------------------------------------
+Mar 21, 2016
+Attendance:
+- Bri	- Nick	 - Max
+- Greg	- Delroy - Jen
+Met to discuss release plan for iteration 4 and delegated tasks. 
+---------------------------------------------------------------------------------
+Mar 24, 2016
+Attendance:
+- Bri	- Nick	 - Max
+- Jen	- Delroy - Greg
+Brief meeting to determine everyone was on task.
+---------------------------------------------------------------------------------
+Mar 30, 2016
+Attendance:
+- Bri	- Nick	 - Max
+- Jen	- Delroy - Greg
+Met to discuss plans for presentation and demo.
+---------------------------------------------------------------------------------
+Apr 4, 2016
+Attendance:
+- Bri	- Nick	 - Max
+- Jen	- Delroy - Greg
+Met to run through presentation and demo.
+---------------------------------------------------------------------------------
+Apr 5, 2016
+Attendance:
+- Bri	- Nick	 - Max
+- Jen	- Delroy - Greg
+Brief meeting to discuss previous iteration marks.
+---------------------------------------------------------------------------------

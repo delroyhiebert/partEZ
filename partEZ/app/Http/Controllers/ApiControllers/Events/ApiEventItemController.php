@@ -21,7 +21,7 @@ class ApiEventItemController extends Controller
     {
         $itemlist = json_decode(json_encode($request->itemlist), true);
         $uid = Auth::User()->uid;
-        var_dump($itemlist);
+        
         foreach( $itemlist as $item )
         {
             $newItem = new EventListItem();
